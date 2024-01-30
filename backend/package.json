@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "start": "node build/src/index.js",
-    "dev": "ts-node index.ts"
+    "generate": "npx prisma generate",
+    "build": "npm run generate && tsc",
+    "start": "npm run build && node build/src/index.js",
+    "dev": "ts-node index.ts",
+    "start:dev": "node build/src/index.js"
   },
   "devDependencies": {
     "prisma": "^5.8.1",
