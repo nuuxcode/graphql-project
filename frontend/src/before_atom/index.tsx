@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Create an Apollo Client instance
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql', // replace with your GraphQL server URL
+  uri: 'http://localhost:4000/graphql',
   cache: new InMemoryCache(),
 });
 
