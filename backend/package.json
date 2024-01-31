@@ -7,7 +7,7 @@
     "postinstall": "npm i -g npx && npx prisma generate --schema=./src/prisma/schema.prisma",
     "build": "npx prisma generate --schema=./src/prisma/schema.prisma && tsc",
     "start": "npm run build && node build/src/index.js",
-    "dev": "ts-node index.ts",
+    "dev": "ts-node src/index.ts",
     "start:dev": "node build/src/index.js"
   },
   "devDependencies": {
