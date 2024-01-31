@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "preinstall": "npm i -g npx",
-    "postinstall": "npx prisma generate",
+    "postinstall": "npm i -g npx && npx prisma generate",
     "build": "npx prisma generate && tsc",
     "start": "npm run build && node build/src/index.js",
     "dev": "ts-node index.ts",
