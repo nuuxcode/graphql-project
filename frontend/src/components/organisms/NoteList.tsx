@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
-import { GET_NOTES } from '../../before_atom/queries';
-import { DELETE_NOTE } from '../../before_atom/mutations';
+import { GET_NOTES } from '../../query/GET_NOTES';
+import { DELETE_NOTE } from '../../mutation/DELETE_NOTE';
 import Button from '../atoms/Button';
 import Modal from '../atoms/Modal';
 import NoteForm from '../molecules/NoteForm';
@@ -13,11 +13,7 @@ interface NoteType {
   title: string;
   content: string;
 }
-interface Note {
-  id?: string;
-  title: string;
-  content: string;
-}
+
 interface GetNotesResponse {
   notes: NoteType[];
 }

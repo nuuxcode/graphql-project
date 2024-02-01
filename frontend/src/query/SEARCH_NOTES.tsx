@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
 export const SEARCH_NOTES = gql`
-  query SearchNotes($searchTerm: String!) {
-    searchNotes(searchTerm: $searchTerm) {
+  query SearchNotes($searchString: String!) {
+    searchNotes(searchString: $searchString) {
       id
       title
       content

@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent } from 'react';
 import { useLazyQuery } from '@apollo/client';
-import { SEARCH_NOTES } from '../../before_atom/queries';
+import { SEARCH_NOTES } from '../../query/SEARCH_NOTES';
 import Button from '../atoms/Button';
 import Modal from '../atoms/Modal';
 

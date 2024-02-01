@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
-import { ADD_NOTE, UPDATE_NOTE } from '../../before_atom/mutations';
+import { ADD_NOTE } from '../../mutation/ADD_NOTE';
+import { UPDATE_NOTE } from '../../mutation/UPDATE_NOTE';
 import Button from '../atoms/Button';
 import Input from '../atoms/Input';
 
