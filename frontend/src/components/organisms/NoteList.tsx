@@ -6,6 +6,7 @@ import Button from '../atoms/Button';
 import Modal from '../atoms/Modal';
 import NoteForm from '../molecules/NoteForm';
 import NoteComponent from '../molecules/Note';
+import { Alert } from 'react-bootstrap';
 
 interface NoteType {
   id?: string;
@@ -25,8 +26,13 @@ const NoteList: React.FC = () => {
   const { loading, error, data, refetch } = useQuery<GetNotesResponse>(GET_NOTES);
   const [deleteNote] = useMutation(DELETE_NOTE);
   const [editingNote, setEditingNote] = useState<NoteType | null>(null);
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleDelete = async (id: string) => {
+    if (data?.notes.length === 1) {
+      setShowAlert(true);
+      return;
+    }
     await deleteNote({ variables: { id } });
     refetch();
   };
@@ -37,6 +43,7 @@ const NoteList: React.FC = () => {
   return (
     <div className="container">
       <Button className="mb-3 w-25" onClick={() => setEditingNote({ title: '', content: '' })}>Add Note</Button>
+      {showAlert && <Alert variant="danger" onClose={() => setShowAlert(false)} dismissible>Cannot delete the last note</Alert>}
       <Modal
         show={editingNote !== null}
         onHide={() => setEditingNote(null)}
