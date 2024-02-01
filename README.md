@@ -1,5 +1,7 @@
 # Notes App
 
+![chrome_HXUayeTEKe](https://github.com/nuuxcode/graphql-project/assets/24565896/41ff1486-a3f4-411e-8a16-100cb68e39a6)
+
 ## Demo and API URLs
 - Demo URL: [https://main.dapvd5xktde9j.amplifyapp.com/](https://main.dapvd5xktde9j.amplifyapp.com/) (Hosted on AWS Amplify)
 - Main GraphQL API:  [http://nuuxcode-graphql-project.eu-north-1.elasticbeanstalk.com/](http://nuuxcode-graphql-project.eu-north-1.elasticbeanstalk.com/) (Hosted on AWS Elastic Beanstalk)
@@ -7,6 +9,8 @@
 - PostgreSQL on AWS RDS
 - Test Main Api : [ Api from AWS Elastic Beanstalk ](https://studio.apollographql.com/sandbox?endpoint=https%3A%2F%2Fbikehub.me%2Fgraphql2)
 - Test Backup Api : [Api from Digital Ocean ](https://studio.apollographql.com/sandbox?endpoint=https%3A%2F%2Fbikehub.me%2Fgraphql)
+
+![chrome_PrPUlKK30N](https://github.com/nuuxcode/graphql-project/assets/24565896/b215eedc-8821-4014-a742-3def26fa3b2e)
 
 # Tech Stack
 
@@ -18,6 +22,8 @@ This project is built using the following technologies:
 - [PostgreSQL](https://www.postgresql.org/): A powerful, open source object-relational database system.
 
 These technologies provide a robust and scalable platform for our GraphQL Notes API.
+
+![image](https://github.com/nuuxcode/graphql-project/assets/24565896/6d10643b-03ce-4f0b-a922-a0b594ac0fa3)
 
 # AWS Services
 
