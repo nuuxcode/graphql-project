@@ -5,7 +5,8 @@
 - Main GraphQL API:  [http://nuuxcode-graphql-project.eu-north-1.elasticbeanstalk.com/](http://nuuxcode-graphql-project.eu-north-1.elasticbeanstalk.com/) (Hosted on AWS Elastic Beanstalk)
 - Backup GraphQL API: [http://142.93.105.168/graphql](http://142.93.105.168/graphql) (Hosted on Digital Ocean)
 - PostgreSQL on AWS RDS
-- Test Api : https://studio.apollographql.com/sandbox/explorer
+- Test Main Api : [ Api from AWS Elastic Beanstalk ](https://studio.apollographql.com/sandbox?endpoint=https%3A%2F%2Fbikehub.me%2Fgraphql2)
+- Test Backup Api : [Api from Digital Ocean ](https://studio.apollographql.com/sandbox?endpoint=https%3A%2F%2Fbikehub.me%2Fgraphql)
 
 # Tech Stack
 
