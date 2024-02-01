@@ -4,18 +4,20 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npm i -g npx && npx prisma generate --schema=./src/prisma/schema.prisma",
-    "build": "npx prisma generate --schema=./src/prisma/schema.prisma && tsc",
-    "start": "npm run build && node build/src/index.js",
+    "build": "tsc",
+    "postbuild": "npm run prisma-generate",
+    "start": "tsc && pwd && ls && ls build && ls build/src && node build/src/index.js",
     "dev": "ts-node src/index.ts",
-    "start:dev": "node build/src/index.js"
+    "start:dev": "node build/src/index.js",
+    "prisma-generate": "npx prisma generate --schema=./src/prisma/schema.prisma",
+    "postinstall": "prisma generate --schema=./src/prisma/schema.prisma"
   },
   "dependencies": {
-    "typescript": "^5.3.3",
-    "ts-node": "^10.9.2",
-    "prisma": "^5.8.1",
-    "@prisma/client": "5.8.1",
+    "@prisma/client": "5.9.0",
     "apollo-server": "^3.13.0",
-    "graphql": "^16.8.1"
+    "graphql": "^16.8.1",
+    "prisma": "5.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }
